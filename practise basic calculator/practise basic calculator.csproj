@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\PCgamer v2.0\Documents\Basic calculator desktop\1.0.0.4\</PublishUrl>
+    <PublishUrl>C:\Users\PCgamer v2.0\Documents\Basic calculator desktop\1.0.0.6\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -26,7 +26,7 @@
     <ProductName>Basic calculator</ProductName>
     <PublisherName>Elijah</PublisherName>
     <MinimumRequiredVersion>1.0.0.2</MinimumRequiredVersion>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -158,6 +158,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="basic_calculator_logo_JC1_icon.ico" />
+    <None Include="Resources\Intro turn on calculator remastered 2.gif" />
+    <None Include="Resources\intro turn on calculator remastered.gif" />
+    <None Include="Resources\Intro turn on calculator.gif" />
     <None Include="Resources\basic calculator logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

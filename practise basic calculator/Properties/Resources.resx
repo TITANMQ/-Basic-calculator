@@ -124,6 +124,15 @@
   <data name="basic_calculator_logo_JC1_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basic_calculator_logo_JC1_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Intro_turn_on_calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Intro turn on calculator.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="intro_turn_on_calculator_remastered" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\intro turn on calculator remastered.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Intro_turn_on_calculator_remastered_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Intro turn on calculator remastered 2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menu_button_flipping_coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu button flipping coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

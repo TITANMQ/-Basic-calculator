@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace practise_basic_calculator
 {
@@ -26,14 +27,15 @@ namespace practise_basic_calculator
             InitializeComponent();
 
 
-
+          
         }
 
 #region number buttons
 
 
         private void num9_Click(object sender, EventArgs e)
-        {
+        {   
+
             calculatorBox.AppendText("9");
         }
 
@@ -195,12 +197,12 @@ namespace practise_basic_calculator
         
         private void undoButton_Click(object sender, EventArgs e)
         {
-          //  calculatorBox.ClearUndo();
+            calculatorBox.Clear(); 
         }
 
         private void calculatorBox_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
 #region Menu
@@ -218,7 +220,7 @@ namespace practise_basic_calculator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
@@ -277,6 +279,7 @@ namespace practise_basic_calculator
                 this.BackColor = Color.WhiteSmoke;
                 menuPanel.BackColor = Color.WhiteSmoke;
                 designPanel.BackColor = Color.WhiteSmoke;
+                addionalButtonsPanel.BackColor = Color.WhiteSmoke;
                 
                 // calculator box font colour 
                 calculatorBox.ForeColor = Color.Black;
@@ -309,7 +312,8 @@ namespace practise_basic_calculator
                 //form colour    
                 this.BackColor = Color.White;
                 menuPanel.BackColor = Color.LimeGreen;
-                designPanel.BackColor = Color.LimeGreen; 
+                designPanel.BackColor = Color.LimeGreen;
+                addionalButtonsPanel.BackColor = Color.LimeGreen;
 
                 // calculator box font colour 
                 calculatorBox.ForeColor = Color.LimeGreen;
@@ -343,6 +347,7 @@ namespace practise_basic_calculator
                 this.BackColor = Color.Fuchsia;
                 menuPanel.BackColor = Color.DarkTurquoise;
                 designPanel.BackColor = Color.DarkTurquoise;
+                addionalButtonsPanel.BackColor = Color.DarkTurquoise;
 
                 // calculator box font colour 
                 calculatorBox.ForeColor = Color.DarkTurquoise;
@@ -376,6 +381,7 @@ namespace practise_basic_calculator
                 this.BackColor = Color.Silver;
                 menuPanel.BackColor = Color.Silver;
                 designPanel.BackColor = Color.Silver;
+                addionalButtonsPanel.BackColor = Color.Silver;
 
                 // calculator box font colour 
                 calculatorBox.ForeColor = Color.Black;
@@ -407,6 +413,7 @@ namespace practise_basic_calculator
                 this.BackColor = Color.White;
                 menuPanel.BackColor = Color.Red;
                 designPanel.BackColor = Color.Red;
+                addionalButtonsPanel.BackColor = Color.Red;
 
                 // calculator box font colour 
                 calculatorBox.ForeColor = Color.Red;
@@ -438,7 +445,8 @@ namespace practise_basic_calculator
                 //form colour    
                 this.BackColor = Color.White;
                 menuPanel.BackColor = Color.Blue;
-                designPanel.BackColor = Color.Blue; 
+                designPanel.BackColor = Color.Blue;
+                addionalButtonsPanel.BackColor = Color.Blue;
 
                 // calculator box font colour 
                 calculatorBox.ForeColor = Color.Blue;
@@ -468,7 +476,7 @@ namespace practise_basic_calculator
         {
 
         }
-
+        //squared number
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -492,6 +500,98 @@ namespace practise_basic_calculator
         {
             Form helpF = new Help();
             helpF.Show();
+        }
+
+        private void CancelButtonTip_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+#region Additional buttons menu  
+
+        // additional buttons menu button (open)
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            addionalButtonsPanel.Visible = true;
+            designPanel.Visible = false;
+            menuPanel.Visible = false;
+        }
+        //additional buttons menu button 2 (close)
+        private void button4_Click(object sender, EventArgs e)
+        {
+            addionalButtonsPanel.Visible = false;
+        }
+        private void percentageButton_Click(object sender, EventArgs e)
+        {
+            string number = calculatorBox.Text;
+            Double percent;
+            Double.TryParse(number, out percent);
+
+            Double percentage = percent / 100;
+            calculatorBox.Text = percentage.ToString();
+        } 
+        //decimal point
+        private void button3_Click_2(object sender, EventArgs e)
+        {
+            calculatorBox.AppendText(".");
+        }
+
+        #endregion
+        // on button
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //calculator off  
+            helloTimer.Enabled = true;
+            helloTimer.Start();
+            
+
+            helloIntro.Visible = true;
+            helloIntro.Enabled = true;
+
+
+
+
+            
+
+            
+
+
+            
+
+            buttonOn.Enabled = false;
+            num0.Enabled = true;
+            num1.Enabled = true;
+            num2.Enabled = true;
+            num3.Enabled = true;
+            num4.Enabled = true;
+            num5.Enabled = true;
+            num6.Enabled = true;
+            num7.Enabled = true;
+            num8.Enabled = true;
+            num9.Enabled = true;
+
+            ButtonMultiply.Enabled = true;
+            ButtonPlus.Enabled = true;
+            ButtonMinus.Enabled = true;
+            ButtonDivide.Enabled = true;
+            ButtonEquals.Enabled = true;
+            piButton.Enabled = true;
+            buttonSquared.Enabled = true;
+            undoButton.Enabled = true;
+            buttonCancel.Enabled = true;
+
+            // addional buttons 
+            buttonPercentage.Enabled = true;
+            buttonDecimal.Enabled = true;
+
+
+
+
+        }
+
+        private void helloTimer_Tick(object sender, EventArgs e)
+        {
+
+            helloIntro.Visible = false;
         }
     }
 }

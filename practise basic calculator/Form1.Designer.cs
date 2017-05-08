@@ -46,7 +46,7 @@
             this.ButtonMinus = new System.Windows.Forms.Button();
             this.ButtonMultiply = new System.Windows.Forms.Button();
             this.ButtonEquals = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.undoButton = new System.Windows.Forms.Button();
             this.menuPanel = new System.Windows.Forms.Panel();
             this.menuTitle = new System.Windows.Forms.Label();
@@ -57,6 +57,10 @@
             this.aboutButton = new System.Windows.Forms.Button();
             this.menuButton = new System.Windows.Forms.Button();
             this.CancelButtonTip = new System.Windows.Forms.ToolTip(this.components);
+            this.piButton = new System.Windows.Forms.Button();
+            this.buttonSquared = new System.Windows.Forms.Button();
+            this.addionalButtonsMenuB = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.designPanel = new System.Windows.Forms.Panel();
             this.blueCBox = new System.Windows.Forms.CheckBox();
             this.neonCBox = new System.Windows.Forms.CheckBox();
@@ -65,10 +69,16 @@
             this.greenCBox = new System.Windows.Forms.CheckBox();
             this.DefaultCBox = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.piButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addionalButtonsPanel = new System.Windows.Forms.Panel();
+            this.buttonDecimal = new System.Windows.Forms.Button();
+            this.buttonPercentage = new System.Windows.Forms.Button();
+            this.buttonOn = new System.Windows.Forms.Button();
+            this.helloTimer = new System.Windows.Forms.Timer(this.components);
+            this.helloIntro = new System.Windows.Forms.PictureBox();
             this.menuPanel.SuspendLayout();
             this.designPanel.SuspendLayout();
+            this.addionalButtonsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.helloIntro)).BeginInit();
             this.SuspendLayout();
             // 
             // calculatorBox
@@ -90,6 +100,7 @@
             // 
             // num7
             // 
+            this.num7.Enabled = false;
             this.num7.Location = new System.Drawing.Point(35, 104);
             this.num7.Name = "num7";
             this.num7.Size = new System.Drawing.Size(35, 31);
@@ -100,6 +111,7 @@
             // 
             // num8
             // 
+            this.num8.Enabled = false;
             this.num8.Location = new System.Drawing.Point(76, 104);
             this.num8.Name = "num8";
             this.num8.Size = new System.Drawing.Size(35, 31);
@@ -110,6 +122,7 @@
             // 
             // num9
             // 
+            this.num9.Enabled = false;
             this.num9.Location = new System.Drawing.Point(117, 104);
             this.num9.Name = "num9";
             this.num9.Size = new System.Drawing.Size(35, 31);
@@ -120,6 +133,7 @@
             // 
             // num4
             // 
+            this.num4.Enabled = false;
             this.num4.Location = new System.Drawing.Point(35, 141);
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(35, 31);
@@ -130,6 +144,7 @@
             // 
             // num5
             // 
+            this.num5.Enabled = false;
             this.num5.Location = new System.Drawing.Point(76, 141);
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(35, 31);
@@ -140,6 +155,7 @@
             // 
             // num6
             // 
+            this.num6.Enabled = false;
             this.num6.Location = new System.Drawing.Point(117, 141);
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(35, 31);
@@ -150,6 +166,7 @@
             // 
             // num1
             // 
+            this.num1.Enabled = false;
             this.num1.Location = new System.Drawing.Point(35, 178);
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(35, 31);
@@ -160,6 +177,7 @@
             // 
             // num2
             // 
+            this.num2.Enabled = false;
             this.num2.Location = new System.Drawing.Point(76, 178);
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(35, 31);
@@ -170,6 +188,7 @@
             // 
             // num3
             // 
+            this.num3.Enabled = false;
             this.num3.Location = new System.Drawing.Point(117, 178);
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(35, 31);
@@ -180,6 +199,7 @@
             // 
             // num0
             // 
+            this.num0.Enabled = false;
             this.num0.Location = new System.Drawing.Point(76, 215);
             this.num0.Name = "num0";
             this.num0.Size = new System.Drawing.Size(35, 31);
@@ -190,6 +210,7 @@
             // 
             // ButtonPlus
             // 
+            this.ButtonPlus.Enabled = false;
             this.ButtonPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonPlus.Location = new System.Drawing.Point(174, 104);
             this.ButtonPlus.Name = "ButtonPlus";
@@ -201,6 +222,7 @@
             // 
             // ButtonDivide
             // 
+            this.ButtonDivide.Enabled = false;
             this.ButtonDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonDivide.Location = new System.Drawing.Point(174, 141);
             this.ButtonDivide.Name = "ButtonDivide";
@@ -212,6 +234,7 @@
             // 
             // ButtonMinus
             // 
+            this.ButtonMinus.Enabled = false;
             this.ButtonMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonMinus.Location = new System.Drawing.Point(216, 104);
             this.ButtonMinus.Name = "ButtonMinus";
@@ -223,6 +246,7 @@
             // 
             // ButtonMultiply
             // 
+            this.ButtonMultiply.Enabled = false;
             this.ButtonMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonMultiply.Location = new System.Drawing.Point(216, 141);
             this.ButtonMultiply.Name = "ButtonMultiply";
@@ -235,6 +259,7 @@
             // 
             // ButtonEquals
             // 
+            this.ButtonEquals.Enabled = false;
             this.ButtonEquals.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.ButtonEquals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonEquals.Location = new System.Drawing.Point(174, 215);
@@ -245,19 +270,22 @@
             this.ButtonEquals.UseVisualStyleBackColor = true;
             this.ButtonEquals.Click += new System.EventHandler(this.ButtonEquals_Click);
             // 
-            // button1
+            // buttonCancel
             // 
-            this.button1.Location = new System.Drawing.Point(117, 215);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 31);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "C";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
+            this.buttonCancel.Enabled = false;
+            this.buttonCancel.Location = new System.Drawing.Point(117, 215);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(35, 31);
+            this.buttonCancel.TabIndex = 16;
+            this.buttonCancel.Text = "C";
+            this.CancelButtonTip.SetToolTip(this.buttonCancel, "Cancel calculation");
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCancel.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // undoButton
             // 
+            this.undoButton.Enabled = false;
             this.undoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.undoButton.Location = new System.Drawing.Point(36, 215);
             this.undoButton.Name = "undoButton";
@@ -265,7 +293,6 @@
             this.undoButton.TabIndex = 17;
             this.undoButton.Text = "<";
             this.undoButton.UseVisualStyleBackColor = true;
-            this.undoButton.Visible = false;
             this.undoButton.Click += new System.EventHandler(this.undoButton_Click);
             // 
             // menuPanel
@@ -278,7 +305,7 @@
             this.menuPanel.Controls.Add(this.designButton);
             this.menuPanel.Controls.Add(this.optionButton);
             this.menuPanel.Controls.Add(this.aboutButton);
-            this.menuPanel.Location = new System.Drawing.Point(0, -1);
+            this.menuPanel.Location = new System.Drawing.Point(0, -2);
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(112, 267);
             this.menuPanel.TabIndex = 19;
@@ -309,6 +336,7 @@
             this.menuButton2.Size = new System.Drawing.Size(15, 274);
             this.menuButton2.TabIndex = 23;
             this.menuButton2.Text = "<";
+            this.CancelButtonTip.SetToolTip(this.menuButton2, "Close menu button");
             this.menuButton2.UseVisualStyleBackColor = false;
             this.menuButton2.Click += new System.EventHandler(this.menuButton2_Click);
             // 
@@ -368,13 +396,69 @@
             this.menuButton.Size = new System.Drawing.Size(15, 274);
             this.menuButton.TabIndex = 18;
             this.menuButton.Text = ">";
+            this.CancelButtonTip.SetToolTip(this.menuButton, "Menu button");
             this.menuButton.UseVisualStyleBackColor = false;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click_1);
             // 
             // CancelButtonTip
             // 
             this.CancelButtonTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.CancelButtonTip.ToolTipTitle = "Cancel button";
+            this.CancelButtonTip.ToolTipTitle = "Calculator info";
+            this.CancelButtonTip.Popup += new System.Windows.Forms.PopupEventHandler(this.CancelButtonTip_Popup);
+            // 
+            // piButton
+            // 
+            this.piButton.Enabled = false;
+            this.piButton.Location = new System.Drawing.Point(174, 178);
+            this.piButton.Name = "piButton";
+            this.piButton.Size = new System.Drawing.Size(35, 31);
+            this.piButton.TabIndex = 21;
+            this.piButton.Text = "π";
+            this.CancelButtonTip.SetToolTip(this.piButton, "Pi button");
+            this.piButton.UseVisualStyleBackColor = true;
+            this.piButton.Click += new System.EventHandler(this.piButton_Click);
+            // 
+            // buttonSquared
+            // 
+            this.buttonSquared.Enabled = false;
+            this.buttonSquared.Location = new System.Drawing.Point(215, 178);
+            this.buttonSquared.Name = "buttonSquared";
+            this.buttonSquared.Size = new System.Drawing.Size(35, 31);
+            this.buttonSquared.TabIndex = 22;
+            this.buttonSquared.Text = "²";
+            this.CancelButtonTip.SetToolTip(this.buttonSquared, "Square button");
+            this.buttonSquared.UseVisualStyleBackColor = true;
+            this.buttonSquared.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // addionalButtonsMenuB
+            // 
+            this.addionalButtonsMenuB.BackColor = System.Drawing.Color.White;
+            this.addionalButtonsMenuB.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.addionalButtonsMenuB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addionalButtonsMenuB.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.addionalButtonsMenuB.Location = new System.Drawing.Point(269, 104);
+            this.addionalButtonsMenuB.Name = "addionalButtonsMenuB";
+            this.addionalButtonsMenuB.Size = new System.Drawing.Size(15, 105);
+            this.addionalButtonsMenuB.TabIndex = 24;
+            this.addionalButtonsMenuB.Text = "<";
+            this.CancelButtonTip.SetToolTip(this.addionalButtonsMenuB, " Additional buttons  ");
+            this.addionalButtonsMenuB.UseVisualStyleBackColor = false;
+            this.addionalButtonsMenuB.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button4.Location = new System.Drawing.Point(0, -1);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(15, 105);
+            this.button4.TabIndex = 26;
+            this.button4.Text = ">";
+            this.CancelButtonTip.SetToolTip(this.button4, " Additional buttons  ");
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // designPanel
             // 
@@ -387,7 +471,7 @@
             this.designPanel.Controls.Add(this.greenCBox);
             this.designPanel.Controls.Add(this.DefaultCBox);
             this.designPanel.Controls.Add(this.label1);
-            this.designPanel.Location = new System.Drawing.Point(111, 76);
+            this.designPanel.Location = new System.Drawing.Point(111, 73);
             this.designPanel.Name = "designPanel";
             this.designPanel.Size = new System.Drawing.Size(143, 101);
             this.designPanel.TabIndex = 20;
@@ -473,25 +557,66 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Design styles";
             // 
-            // piButton
+            // addionalButtonsPanel
             // 
-            this.piButton.Location = new System.Drawing.Point(174, 178);
-            this.piButton.Name = "piButton";
-            this.piButton.Size = new System.Drawing.Size(35, 31);
-            this.piButton.TabIndex = 21;
-            this.piButton.Text = "π";
-            this.piButton.UseVisualStyleBackColor = true;
-            this.piButton.Click += new System.EventHandler(this.piButton_Click);
+            this.addionalButtonsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addionalButtonsPanel.Controls.Add(this.buttonDecimal);
+            this.addionalButtonsPanel.Controls.Add(this.buttonPercentage);
+            this.addionalButtonsPanel.Controls.Add(this.button4);
+            this.addionalButtonsPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addionalButtonsPanel.Location = new System.Drawing.Point(174, 104);
+            this.addionalButtonsPanel.Name = "addionalButtonsPanel";
+            this.addionalButtonsPanel.Size = new System.Drawing.Size(110, 105);
+            this.addionalButtonsPanel.TabIndex = 25;
+            this.addionalButtonsPanel.Visible = false;
             // 
-            // button2
+            // buttonDecimal
             // 
-            this.button2.Location = new System.Drawing.Point(215, 178);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(35, 31);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "²";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDecimal.Location = new System.Drawing.Point(21, 40);
+            this.buttonDecimal.Name = "buttonDecimal";
+            this.buttonDecimal.Size = new System.Drawing.Size(35, 31);
+            this.buttonDecimal.TabIndex = 28;
+            this.buttonDecimal.Text = ".";
+            this.buttonDecimal.UseVisualStyleBackColor = true;
+            this.buttonDecimal.Click += new System.EventHandler(this.button3_Click_2);
+            // 
+            // buttonPercentage
+            // 
+            this.buttonPercentage.Location = new System.Drawing.Point(21, 3);
+            this.buttonPercentage.Name = "buttonPercentage";
+            this.buttonPercentage.Size = new System.Drawing.Size(35, 31);
+            this.buttonPercentage.TabIndex = 27;
+            this.buttonPercentage.Text = "%";
+            this.buttonPercentage.UseVisualStyleBackColor = true;
+            this.buttonPercentage.Click += new System.EventHandler(this.percentageButton_Click);
+            // 
+            // buttonOn
+            // 
+            this.buttonOn.Location = new System.Drawing.Point(225, 7);
+            this.buttonOn.Name = "buttonOn";
+            this.buttonOn.Size = new System.Drawing.Size(47, 23);
+            this.buttonOn.TabIndex = 26;
+            this.buttonOn.Text = "On";
+            this.buttonOn.UseVisualStyleBackColor = true;
+            this.buttonOn.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // helloTimer
+            // 
+            this.helloTimer.Interval = 1500;
+            this.helloTimer.Tick += new System.EventHandler(this.helloTimer_Tick);
+            // 
+            // helloIntro
+            // 
+            this.helloIntro.BackColor = System.Drawing.Color.Transparent;
+            this.helloIntro.Enabled = false;
+            this.helloIntro.Image = global::practise_basic_calculator.Properties.Resources.Intro_turn_on_calculator_remastered_2;
+            this.helloIntro.Location = new System.Drawing.Point(35, 44);
+            this.helloIntro.Name = "helloIntro";
+            this.helloIntro.Size = new System.Drawing.Size(215, 32);
+            this.helloIntro.TabIndex = 27;
+            this.helloIntro.TabStop = false;
+            this.helloIntro.Visible = false;
             // 
             // Form1
             // 
@@ -499,13 +624,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.designPanel);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.piButton);
+            this.Controls.Add(this.addionalButtonsPanel);
             this.Controls.Add(this.menuPanel);
+            this.Controls.Add(this.designPanel);
+            this.Controls.Add(this.helloIntro);
+            this.Controls.Add(this.buttonOn);
+            this.Controls.Add(this.addionalButtonsMenuB);
+            this.Controls.Add(this.buttonSquared);
+            this.Controls.Add(this.piButton);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.undoButton);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.ButtonEquals);
             this.Controls.Add(this.ButtonMultiply);
             this.Controls.Add(this.ButtonMinus);
@@ -534,6 +663,8 @@
             this.menuPanel.PerformLayout();
             this.designPanel.ResumeLayout(false);
             this.designPanel.PerformLayout();
+            this.addionalButtonsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.helloIntro)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -556,7 +687,7 @@
         private System.Windows.Forms.Button ButtonMinus;
         private System.Windows.Forms.Button ButtonMultiply;
         private System.Windows.Forms.Button ButtonEquals;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button undoButton;
         private System.Windows.Forms.Button menuButton;
         private System.Windows.Forms.Panel menuPanel;
@@ -575,8 +706,16 @@
         private System.Windows.Forms.CheckBox redCBox;
         private System.Windows.Forms.CheckBox silverCBox;
         private System.Windows.Forms.Button piButton;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonSquared;
         private System.Windows.Forms.Button menuButton2;
+        private System.Windows.Forms.Button addionalButtonsMenuB;
+        private System.Windows.Forms.Panel addionalButtonsPanel;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonPercentage;
+        private System.Windows.Forms.Button buttonDecimal;
+        private System.Windows.Forms.Button buttonOn;
+        private System.Windows.Forms.Timer helloTimer;
+        private System.Windows.Forms.PictureBox helloIntro;
     }
 }
 

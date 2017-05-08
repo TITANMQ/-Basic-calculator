@@ -83,6 +83,36 @@ namespace practise_basic_calculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Intro_turn_on_calculator {
+            get {
+                object obj = ResourceManager.GetObject("Intro_turn_on_calculator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap intro_turn_on_calculator_remastered {
+            get {
+                object obj = ResourceManager.GetObject("intro_turn_on_calculator_remastered", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Intro_turn_on_calculator_remastered_2 {
+            get {
+                object obj = ResourceManager.GetObject("Intro_turn_on_calculator_remastered_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_button_flipping_coin {
             get {
                 object obj = ResourceManager.GetObject("menu_button_flipping_coin", resourceCulture);
